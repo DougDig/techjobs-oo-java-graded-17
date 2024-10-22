@@ -49,8 +49,8 @@ public class JobTest {
         Job job = new Job("Product tester", new Employer("ACME"),
                 new Location("Desert"), new PositionType("Quality control"),
                 new CoreCompetency("Persistence"));
-        String firstString = (job.toString().charAt(0) + String.valueOf(job.toString().charAt(1)));
-        String lastString = (job.toString().charAt(job.toString().length() - 2) + String.valueOf(job.toString().charAt(job.toString().length()-1)));
+        String firstString = (String.valueOf(job.toString().charAt(0)));
+        String lastString = (String.valueOf(job.toString().charAt(job.toString().length()-1)));
         assertEquals("Error in first NewLine", System.lineSeparator(),firstString);
         assertEquals( "Error in last Newline",System.lineSeparator(),lastString);
     }

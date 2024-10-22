@@ -46,14 +46,13 @@ public class Job {
         if (nameField.equals(employerField) && employerField.equals(locationField) && locationField.equals(positionField) && positionField.equals(coreField)){
             return "OOPS! This job does not seem to exist.";
         }
-            String lineseperator = System.lineSeparator();
             return  System.lineSeparator() +
-                    "ID:  _______ " + (id > 0 ? id : "Data not available") + System.lineSeparator() +
-                    "Name: _______ " + nameField + System.lineSeparator() +
-                    "Employer: _______ " + employerField + System.lineSeparator() +
-                    "Location: _______ " + locationField + System.lineSeparator() +
-                    "Position Type: _______ " + positionField + System.lineSeparator() +
-                    "Core Competency: _______ " + coreField +
+                    "ID: " + (id > 0 ? id : "Data not available") + System.lineSeparator() +
+                    "Name: " + nameField + System.lineSeparator() +
+                    "Employer: " + employerField + System.lineSeparator() +
+                    "Location: " + locationField + System.lineSeparator() +
+                    "Position Type: " + positionField + System.lineSeparator() +
+                    "Core Competency: " + coreField +
                     System.lineSeparator();
 
     }
