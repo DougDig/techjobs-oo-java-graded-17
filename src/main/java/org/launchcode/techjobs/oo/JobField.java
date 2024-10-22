@@ -36,8 +36,6 @@ public abstract class JobField {
         return Objects.hash(getId());
     }
 
-    // Getters and Setters:
-
     public int getId() {
         return id;
     }

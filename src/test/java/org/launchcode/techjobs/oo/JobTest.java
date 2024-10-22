@@ -101,6 +101,4 @@ public class JobTest {
         assertTrue(jobPositionType.toString().contains("Data not available"));
         assertTrue(jobCoreCompetency.toString().contains("Data not available"));
     }
-
-    //TODO: Create your unit tests here
 }
